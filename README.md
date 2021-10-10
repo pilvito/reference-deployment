@@ -14,10 +14,10 @@ Component choice for cloud native deployment
 
 ### Suggested deployment
 
-Our Kubernetes cluster consists of an **Ingress** and **API Gateway** based on **Emissary-ingress** The API gateway get  
+Our Kubernetes cluster consists of an **Ingress** and **API Gateway** based on **[Emissary-ingress](https://www.getambassador.io/products/api-gateway/)** The API gateway get  
 traffic from a Layer-4 Cloud load balancer.
 
-We propose a **Service Mesh** for microservice deployment. **Linkerd** is chosen for service mesh due to its simplicity. 
+We propose a **Service Mesh** for microservice deployment. **[Linkerd](https://linkerd.io/)** is chosen for service mesh due to its simplicity. 
 
 !["microservice-deployment.png"](./images/microservice-deployment.png)
 
