@@ -1,0 +1,10 @@
+---
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: emoji
+spec:
+  hostname: kube-vm-1
+  prefix: /
+  service: web-svc.emojivoto.svc.cluster.local
+  rewrite: ""

@@ -1,0 +1,11 @@
+---
+# https://linkerd.io/2.10/tasks/exposing-dashboard/#ambassador
+apiVersion: getambassador.io/v3alpha1
+kind: Mapping
+metadata:
+  name: linkerd-dash-mapping
+spec:
+  hostname: kube-vm-1
+  host_rewrite: web.linkerd-viz.svc.cluster.local:8084
+  prefix: /
+  service: web.linkerd-viz.svc.cluster.local:8084

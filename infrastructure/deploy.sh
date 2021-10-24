@@ -21,3 +21,17 @@ kubectl -n emissary wait --for condition=available --timeout=90s deploy -lapp.ku
 # Tell Emissary-ingress to use this secret for TLS termination
 kubectl apply -f ./emissary-ingress/wildcard-host.yaml
 kubectl apply -f ./emissary-ingress/listeners.yaml
+
+# Deploy linkerd
+./scripts/linkerd.sh
+
+# Expose linkerd dashboard through emissary ingress
+kubectl apply -f ./linkerd/dashboard-mapping.yaml
+
+kubectl apply -f linkerd/header-mapping.yaml
+
+
+
+# Inject likerd to emissary-ingress
+
+# kubectl get deploy -n emissary emissary-ingress -o yaml | linkerd inject  --skip-inbound-ports "80,443" --ingress - | kubectl apply -f -
