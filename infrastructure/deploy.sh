@@ -20,3 +20,4 @@ kubectl -n emissary wait --for condition=available --timeout=90s deploy -lapp.ku
 
 # Tell Emissary-ingress to use this secret for TLS termination
 kubectl apply -f ./emissary-ingress/wildcard-host.yaml
+kubectl apply -f ./emissary-ingress/listeners.yaml
