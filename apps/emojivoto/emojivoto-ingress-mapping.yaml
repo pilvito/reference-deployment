@@ -4,7 +4,7 @@ kind: Mapping
 metadata:
   name: emoji
 spec:
-  hostname: kube-vm-1
+  hostname: localhost
   prefix: /
   service: web-svc.emojivoto.svc.cluster.local
   rewrite: ""
