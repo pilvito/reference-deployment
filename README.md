@@ -23,4 +23,6 @@ We propose a **Service Mesh** for microservice deployment. **[Linkerd](https://l
 
 ### Getting started
 
-Getting started guide.
+1. Get the infrastructure up and running
+2. Deploy Sample microservice and learn to operate
+3. Create own microservice
