@@ -20,12 +20,11 @@ kubectl apply -f ./emissary-ingress/listeners.yaml
 # Deploy linkerd
 ./scripts/linkerd.sh
 
-# Expose linkerd dashboard through emissary ingress
-kubectl apply -f ./linkerd/dashboard-mapping.yaml
+# Expose linkerd dashboard through emissary ingress for testing
+# kubectl apply -f ./linkerd/dashboard-mapping.yaml
 
+# Mapping to tell Emissary to forward Linkerd headers on all routes
 kubectl apply -f linkerd/header-mapping.yaml
-
-
 
 # Inject likerd to emissary-ingress
 

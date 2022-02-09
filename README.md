@@ -24,5 +24,5 @@ We propose a **Service Mesh** for microservice deployment. **[Linkerd](https://l
 ### Getting started
 
 1. [Get the infrastructure up and running](./infrastructure/README.md)
-2. Deploy Sample microservice and learn to operate
+2. [Deploy Sample microservice and learn to operate](apps/emojivoto/README.md)
 3. Create own microservice

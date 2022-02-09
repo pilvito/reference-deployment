@@ -6,7 +6,7 @@ Common way to routing traffic to a kubernetes cluster is my deploying a in-clust
 
 Following articals describe the concepts well.
 - https://www.getambassador.io/docs/emissary/latest/topics/concepts/kubernetes-network-architecture/
-- https://linkerd.io/2.11/overview/
+- https://buoyant.io/2021/05/24/emissary-and-linkerd-the-best-of-both-worlds/#:~:text=While%20Emissary%20is%20focused%20on,a%20developer%20focused%20Kubernetes%20platform.
 
 !["microservice-deployment.png"](./../images/microservice-deployment.png)
 
@@ -43,4 +43,4 @@ https://localhost/ambassador/v0/diag/
 - To access linkerd dashboard, run following command in terminal
 linkerd viz dashboard
 
-### Next step is to deploy a sample application
+### [Next step is to deploy a sample application](../apps/emojivoto/README.md)
